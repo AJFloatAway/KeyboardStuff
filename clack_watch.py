@@ -21,7 +21,7 @@ while True:
     soup = BeautifulSoup(response.text, "html.parser")
     time.sleep(5)
     
-    # if the number of times the word "Google" occurs on the page is less than 1,
+    # if the number of times the word "clack factory" occurs on the page is != 3,
     if len(soup.find_all("h3", string=re.compile("Clack Factory"))) == 3:
         # wait 60 seconds,
         print("#clacks = ", len(soup.find_all("h3", string=re.compile("Clack Factory"))))
@@ -29,7 +29,7 @@ while True:
         # continue with the script,
         continue
         
-    # but if the word "Google" occurs any other number of times,
+    # but if the word "clack factory" occurs any other number of times,
     else:
         # make notification
         notification.notify(
