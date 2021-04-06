@@ -5,7 +5,7 @@ Created on Tue Feb 16 12:57:23 2021
 @author: alanj
 """
 import time 
-import requests #for retreiving coronavirus data from web
+import requests #for retreiving data from web
 from plyer import notification #for getting notification on your PC
 from bs4 import BeautifulSoup
 import re
