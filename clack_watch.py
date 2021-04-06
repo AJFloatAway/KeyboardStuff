@@ -4,7 +4,6 @@ Created on Tue Feb 16 12:57:23 2021
 
 @author: alanj
 """
-
 import time 
 import requests #for retreiving coronavirus data from web
 from plyer import notification #for getting notification on your PC
@@ -32,11 +31,10 @@ while True:
         
     # but if the word "Google" occurs any other number of times,
     else:
-        print("#clacks = ", len(soup.find_all("h3", string=re.compile("Clack Factory"))))
         # make notification
         notification.notify(
             title = "New Clack Skull in store!",
-            message = "Go get it",
+            message = "Go get it idjit",
             app_icon = "clack.ico",
             timeout = 10
         )
